@@ -1,0 +1,121 @@
+@media screen and (min-width: 640px) {
+
+.js-media-library-selection {
+  .media_selected-image {
+    border: 1px solid #999;
+    margin-bottom: .5em;
+    background-color: $color-white;
+  }
+}
+
+.view-display-id-media_page_list {
+  table.views-view-table {
+    max-width: 100%;
+
+    .views-field.views-field-thumbnail__target-id {
+      max-width: 225px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+#media-library-view {
+  .media-library-view .view-content .views-form form{
+    .form-actions, [id^='edit-actions'] {
+      margin-top: 1.5em;
+    }
+
+    .views__rows {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+      grid-gap: 10px;
+
+      .views-row {
+        margin: unset;
+        width: 100%;
+      }
+    }
+
+    label.media-library-select-all {
+      grid-column: 1/-1;
+      border: 1px solid #dedede;
+      background-color: #dedede;
+      padding: .25em;
+      margin-top: .25em;
+    }
+
+    .form--inline.clearfix {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      grid-column-gap: 10px;
+      margin-bottom: .5em;
+    }
+
+    .form--inline.clearfix select {
+      max-width: 100%;
+      min-width: 190px;
+    }
+
+    .form--inline.clearfix input {
+      max-width: 100%;
+      min-width: 190px;
+    }
+
+
+    .media-library-item--grid {
+      margin-top: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      display: inline-flex;
+      flex-direction: column;;
+
+      .field--name-field-media-image {
+        display: inline-flex;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        background-color: #dfdfdf;
+
+        img {
+          max-width: calc(100% - 10px);
+          height: auto;
+          border: 1px solid #222;
+        }
+      }
+
+      .views-field-media-library-select-form {
+        margin-top: auto;
+        text-align: center;
+
+        .form-type-checkbox {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .views-field.views-field-name {
+        padding: .5em;
+        word-break: break-all;
+        text-align: center;
+        line-height: 1;
+        font-weight: 400;
+      }
+
+
+
+      .views-live-preview & {
+        div.views-row+div.views-row {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+}

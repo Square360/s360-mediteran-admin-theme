@@ -1,0 +1,22 @@
+name: Mediteran S360
+type: theme
+description: 'Square360 Mods to the Mediteran Theme'
+package: Other
+core: 8.x
+base theme: mediteran
+
+libraries:
+  - mediteran_s360/overrides
+
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+
+screenshot: images/mediteran_s360.png

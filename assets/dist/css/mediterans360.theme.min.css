@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-06-We | 144857
+ * @build: yyyy-06-We | 160731
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -93,6 +93,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    #media-library-view .media-library-view .view-content .views-form form .media-library-item--grid.cheked {
+      border-color: green;
+      border-width: 2px; }
     #media-library-view .media-library-view .view-content .views-form form .media-library-item--grid .field--name-field-media-image {
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;

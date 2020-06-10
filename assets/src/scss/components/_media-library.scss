@@ -72,7 +72,12 @@
       width: 100%;
       border: 1px solid #ccc;
       display: inline-flex;
-      flex-direction: column;;
+      flex-direction: column;
+      
+      &.cheked {
+        border-color: green;
+        border-width: 2px;
+      }
 
       .field--name-field-media-image {
         display: inline-flex;

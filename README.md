@@ -1,4 +1,4 @@
-# Square360 Modifications to Mediteran Admin Theme
+# Square360 Modifications to Mediteran Admin Theme for Drupal 8/9
 
 Original theme located at: [Mediteran Theme](https://www.drupal.org/project/mediteran)
 

@@ -1,23 +1,24 @@
-.form-checkboxes:not(.views-ui-dialog) {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-  grid-gap: 5px;
-
-  .form-type-checkbox {
-    margin-bottom: 0;
+.taxonomy--grid {
+  .form-checkboxes:not(.views-ui-dialog) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 5px;
+  
+    .form-type-checkbox {
+      margin-bottom: 0;
+    }
+  }
+  
+  .form-radios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(175px,1fr));
+    grid-gap: 5px;
+  
+    .form-type-radio {
+      margin-bottom: 0;
+    }
   }
 }
-
-.form-radios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(175px,1fr));
-  grid-gap: 5px;
-
-  .form-type-radio {
-    margin-bottom: 0;
-  }
-}
-
 
 @media screen and (min-width: 640px) {
   .form-select, .form-text, .form-textarea {

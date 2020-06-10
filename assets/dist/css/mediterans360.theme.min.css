@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-06-Mo | 090846
+ * @build: yyyy-06-We | 144857
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -20,20 +20,20 @@
     /* LTR */
     width: 25%; } }
 
-.form-checkboxes:not(.views-ui-dialog) {
+.taxonomy--grid .form-checkboxes:not(.views-ui-dialog) {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5px; }
-  .form-checkboxes:not(.views-ui-dialog) .form-type-checkbox {
+  .taxonomy--grid .form-checkboxes:not(.views-ui-dialog) .form-type-checkbox {
     margin-bottom: 0; }
 
-.form-radios {
+.taxonomy--grid .form-radios {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-gap: 5px; }
-  .form-radios .form-type-radio {
+  .taxonomy--grid .form-radios .form-type-radio {
     margin-bottom: 0; }
 
 @media screen and (min-width: 640px) {

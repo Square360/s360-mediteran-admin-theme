@@ -8,3 +8,23 @@ Tweaks added for:
 + Checkbox and radios display as a grid
 + Made main content column wider than standard
 + Theme for Paragraphs Layout structure to be easier to read
+
+## To Add via Composer
+```
+{
+  "type": "package",
+  "package": {
+      "name": "square360/mediteran",
+      "version": "1.0.2",
+      "type": "drupal-theme",
+      "extra": {
+          "installer-name": "mediteran_s360"
+      },
+      "source": {
+          "url": "https://bitbucket.org/sq360_sysadmin/mediteran-s360-admin-theme.git",
+          "type": "git",
+          "reference": "1.0.2"
+      }
+  }
+},
+```

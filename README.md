@@ -3,6 +3,7 @@
 Original theme located at: [Mediteran Theme](https://www.drupal.org/project/mediteran)
 
 **This is a child theme, so it is required you install Mediteran first!**
+**Has been updated for Drupal 8.8 or 9 compatibility
 
 Tweaks added for:
 + Checkbox and radios display as a grid
@@ -15,7 +16,7 @@ Tweaks added for:
   "type": "package",
   "package": {
       "name": "square360/mediteran",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "type": "drupal-theme",
       "extra": {
           "installer-name": "mediteran_s360"
@@ -23,7 +24,7 @@ Tweaks added for:
       "source": {
           "url": "https://bitbucket.org/sq360_sysadmin/mediteran-s360-admin-theme.git",
           "type": "git",
-          "reference": "1.0.2"
+          "reference": "1.1.o"
       }
   }
 },

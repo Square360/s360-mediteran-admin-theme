@@ -16,7 +16,7 @@ Tweaks added for:
   "type": "package",
   "package": {
       "name": "square360/mediteran",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "type": "drupal-theme",
       "extra": {
           "installer-name": "mediteran_s360"
@@ -24,7 +24,7 @@ Tweaks added for:
       "source": {
           "url": "https://bitbucket.org/sq360_sysadmin/mediteran-s360-admin-theme.git",
           "type": "git",
-          "reference": "1.1.o"
+          "reference": "1.2.0"
       }
   }
 },

@@ -1,4 +1,4 @@
-.taxonomy--grid {
+.taxonomy--grid, [id*='edit-field-tax-'] {
   .form-checkboxes:not(.views-ui-dialog) {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));

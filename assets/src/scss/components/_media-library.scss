@@ -8,6 +8,16 @@
   }
 }
 
+.js-media-library-add-form {
+  .item-list {
+    ul {
+      li {
+        max-width: unset;
+      }
+    }
+  }
+}
+
 .view-display-id-media_page_list {
   table.views-view-table {
     max-width: 100%;

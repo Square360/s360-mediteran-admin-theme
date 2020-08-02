@@ -166,6 +166,7 @@ ul.media-library-menu {
 .js-media-library-add-form .item-list ul li {
   list-style: none;
   margin: 0.5rem;
+  max-width: unset;
 }
 
 .js-media-library-add-form .item-list ul li img {

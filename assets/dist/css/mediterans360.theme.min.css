@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-08-Su | 112135
+ * @build: yyyy-08-Su | 140726
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -65,6 +65,8 @@
     border: 1px solid #999;
     margin-bottom: .5em;
     background-color: #ffffff; }
+  .js-media-library-add-form .item-list ul li {
+    max-width: unset; }
   .view-display-id-media_page_list table.views-view-table {
     max-width: 100%; }
     .view-display-id-media_page_list table.views-view-table .views-field.views-field-thumbnail__target-id {

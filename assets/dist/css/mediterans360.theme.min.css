@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-06-We | 162142
+ * @build: yyyy-08-Su | 112135
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -20,20 +20,20 @@
     /* LTR */
     width: 25%; } }
 
-.taxonomy--grid .form-checkboxes:not(.views-ui-dialog) {
+.taxonomy--grid .form-checkboxes:not(.views-ui-dialog), [id*='edit-field-tax-'] .form-checkboxes:not(.views-ui-dialog) {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5px; }
-  .taxonomy--grid .form-checkboxes:not(.views-ui-dialog) .form-type-checkbox {
+  .taxonomy--grid .form-checkboxes:not(.views-ui-dialog) .form-type-checkbox, [id*='edit-field-tax-'] .form-checkboxes:not(.views-ui-dialog) .form-type-checkbox {
     margin-bottom: 0; }
 
-.taxonomy--grid .form-radios {
+.taxonomy--grid .form-radios, [id*='edit-field-tax-'] .form-radios {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-gap: 5px; }
-  .taxonomy--grid .form-radios .form-type-radio {
+  .taxonomy--grid .form-radios .form-type-radio, [id*='edit-field-tax-'] .form-radios .form-type-radio {
     margin-bottom: 0; }
 
 @media screen and (min-width: 640px) {
@@ -145,7 +145,12 @@
       line-height: 1;
       font-weight: 400; }
     .views-live-preview #media-library-view .media-library-view .view-content .views-form form .media-library-item--grid div.views-row + div.views-row {
-      margin-top: 0; } }
+      margin-top: 0; }
+  .media-library-add-form__source-field.field--widget-image-focal-point .image-preview {
+    display: block; }
+  .media-library-add-form__source-field.field--widget-image-focal-point .focal-point-indicator {
+    width: 1px;
+    height: 1px; } }
 
 .field--widget-paragraphs td.field-multiple-drag {
   width: 5%;

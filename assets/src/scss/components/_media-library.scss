@@ -133,4 +133,15 @@
   }
 }
 
+  .media-library-add-form__source-field.field--widget-image-focal-point {
+    .image-preview {
+      display: block;
+    }
+    
+    .focal-point-indicator {
+      width: 1px;
+      height: 1px;
+    }
+  }
+  
 }

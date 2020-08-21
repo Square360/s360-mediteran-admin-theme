@@ -6,6 +6,13 @@
     margin-bottom: .5em;
     background-color: $color-white;
   }
+  
+  .js-form-item {
+    .media-library-edit__link {
+      right: 0px;
+      top: 2px;
+    }
+  }
 }
 
 .js-media-library-add-form {

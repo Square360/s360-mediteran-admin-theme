@@ -18,8 +18,10 @@
 .js-media-library-add-form {
   .item-list {
     ul {
+      list-style-type: none;
       li {
         max-width: unset;
+        list-style-type: none;
       }
     }
   }

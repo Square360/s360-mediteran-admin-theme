@@ -68,8 +68,11 @@
   .js-media-library-selection .js-form-item .media-library-edit__link {
     right: 0px;
     top: 2px; }
-  .js-media-library-add-form .item-list ul li {
-    max-width: unset; }
+  .js-media-library-add-form .item-list ul {
+    list-style-type: none; }
+    .js-media-library-add-form .item-list ul li {
+      max-width: unset;
+      list-style-type: none; }
   .view-display-id-media_page_list table.views-view-table {
     max-width: 100%; }
     .view-display-id-media_page_list table.views-view-table .views-field.views-field-thumbnail__target-id {

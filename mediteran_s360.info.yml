@@ -8,6 +8,12 @@ base theme: mediteran
 libraries:
   - mediteran_s360/overrides
 
+libraries-override:
+  smart_date/smart_date:
+    css:
+      component:
+        css/smart_date.css: false
+
 regions:
   header: 'Header'
   pre_content: 'Pre-content'

@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-08-Fr | 120856
+ * @build: yyyy-08-Tu | 141949
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -230,4 +230,28 @@
   padding: 1em;
   margin-bottom: 1em;
   background: #ededed; }
+
+.field--type-smartdate .datetime-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.field--type-smartdate .datetime-container .label {
+  width: 8%;
+  margin-right: .5em;
+  text-align: right; }
+
+.field--type-smartdate .date-time-container .form-type-date {
+  margin-right: .5em; }
+
+.field--type-smartdate .container-inline .form-item {
+  margin-right: .5em; }
+
+.field--type-smartdate .allday-label {
+  padding: .5em 0 .5em 8%; }
+  .field--type-smartdate .allday-label .allday {
+    margin-right: .5em; }
+
+.field--type-smartdate div[class*='duration'] {
+  margin: 0 8%; }
 

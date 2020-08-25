@@ -1,0 +1,32 @@
+.field--type-smartdate {
+
+  .datetime-container {
+    display: flex;
+  }
+
+  .datetime-container .label {
+      width: 8%;
+      margin-right: .5em;
+      text-align: right;
+  }
+
+  .date-time-container .form-type-date {
+      margin-right: .5em;
+  }
+
+  .container-inline .form-item {
+    margin-right: .5em;
+  }
+
+  .allday-label {
+    padding: .5em 0 .5em 8%;
+
+    .allday {
+      margin-right: .5em;
+    }
+  }
+
+  div[class*='duration'] {
+    margin: 0 8%;
+  }
+}

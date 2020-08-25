@@ -7,10 +7,12 @@ base theme: mediteran
 
 libraries:
   - mediteran_s360/overrides
-  
-# Remove a CSS file:
-stylesheets-remove:
-  - smart_date.css
+
+libraries-override:
+  smart_date/smart_date:
+    css:
+      component:
+        css/smart_date.css: false
 
 regions:
   header: 'Header'

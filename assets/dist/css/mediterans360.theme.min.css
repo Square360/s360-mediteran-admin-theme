@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-08-Fr | 084250
+ * @build: yyyy-08-Fr | 091641
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -255,7 +255,22 @@
 .field--type-smartdate div[class*='duration'] {
   margin: 0 8%; }
 
-.layout-paragraphs-field .layout-paragraphs-actions input.layout-paragraphs-edit, .layout-paragraphs-field .layout-paragraphs-actions input.layout-paragraphs-remove {
-  text-indent: 0;
-  background-size: contain; }
+.layout-paragraphs-field .layout-paragraphs-actions input.layout-paragraphs-edit {
+  text-indent: 17px;
+  background-size: contain;
+  min-width: 63px;
+  max-width: 75px; }
+
+.layout-paragraphs-field .layout-paragraphs-actions input.layout-paragraphs-remove {
+  text-indent: 17px;
+  background-size: contain;
+  min-width: 83px; }
+
+.layout-paragraphs-field .layout-paragraphs-item {
+  border: 1px solid #00d7fe; }
+  .layout-paragraphs-disabled-items .layout-paragraphs-field .layout-paragraphs-item {
+    border: 1px solid #00d7fe; }
+
+.layout-paragraphs-field .layout-paragraphs-layout-region {
+  border: 1px dotted orange; }
 

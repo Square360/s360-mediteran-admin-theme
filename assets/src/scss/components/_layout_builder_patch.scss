@@ -1,10 +1,29 @@
 .layout-paragraphs-field {
   .layout-paragraphs-actions {
     input{
-      &.layout-paragraphs-edit, &.layout-paragraphs-remove {
-        text-indent: 0;
+      &.layout-paragraphs-edit {
+        text-indent: 17px;
         background-size: contain;
+        min-width: 63px;
+        max-width: 75px;
+      }
+      &.layout-paragraphs-remove {
+        text-indent: 17px;
+        background-size: contain;
+        min-width: 83px;
       }
     }
+  }
+  
+  .layout-paragraphs-item {
+    border: 1px solid #00d7fe;
+    
+    .layout-paragraphs-disabled-items & {
+      border: 1px solid #00d7fe;
+    }
+  }
+  
+  .layout-paragraphs-layout-region {
+    border: 1px dotted orange;
   }
 }

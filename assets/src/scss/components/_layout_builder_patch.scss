@@ -1,0 +1,10 @@
+.layout-paragraphs-field {
+  .layout-paragraphs-actions {
+    input{
+      &.layout-paragraphs-edit, &.layout-paragraphs-remove {
+        text-indent: 0;
+        background-size: contain;
+      }
+    }
+  }
+}

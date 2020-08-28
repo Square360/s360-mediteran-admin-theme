@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-08-Tu | 141949
+ * @build: yyyy-08-Fr | 084250
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -254,4 +254,8 @@
 
 .field--type-smartdate div[class*='duration'] {
   margin: 0 8%; }
+
+.layout-paragraphs-field .layout-paragraphs-actions input.layout-paragraphs-edit, .layout-paragraphs-field .layout-paragraphs-actions input.layout-paragraphs-remove {
+  text-indent: 0;
+  background-size: contain; }
 

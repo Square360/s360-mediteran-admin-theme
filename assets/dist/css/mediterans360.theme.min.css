@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-08-Fr | 091641
+ * @build: yyyy-09-Tu | 132517
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -273,4 +273,7 @@
 
 .layout-paragraphs-field .layout-paragraphs-layout-region {
   border: 1px dotted orange; }
+
+.ui-autocomplete-input {
+  z-index: 10000; }
 

@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-09-Tu | 134236
+ * @build: yyyy-09-We | 101357
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -64,7 +64,9 @@
   .js-media-library-selection .media_selected-image {
     border: 1px solid #999;
     margin-bottom: .5em;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    width: auto;
+    padding: 1em; }
   .js-media-library-selection .js-form-item .media-library-edit__link {
     right: 0px;
     top: 2px; }

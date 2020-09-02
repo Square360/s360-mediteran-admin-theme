@@ -29,6 +29,11 @@
   }
 }
 
+.js-media-library-widget .js-media-library-selection .js-media-library-item {
+  width: auto;
+  padding: 0;
+}
+
 .view-display-id-media_page_list {
   table.views-view-table {
     max-width: 100%;

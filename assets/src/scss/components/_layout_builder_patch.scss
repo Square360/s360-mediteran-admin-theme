@@ -27,3 +27,11 @@
     border: 1px dotted orange;
   }
 }
+
+
+.field--widget-layout-paragraphs [role='dialog'] {
+  top: 50% !important;
+  left: 50% !important;
+  width: 1024px !important;
+  transform: translate(-50%,-50%);
+}

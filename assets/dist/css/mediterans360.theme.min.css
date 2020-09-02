@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-09-We | 101357
+ * @build: yyyy-09-We | 170027
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -75,6 +75,9 @@
     .js-media-library-add-form .item-list ul li {
       max-width: unset;
       list-style-type: none; }
+  .js-media-library-widget .js-media-library-selection .js-media-library-item {
+    width: auto;
+    padding: 0; }
   .view-display-id-media_page_list table.views-view-table {
     max-width: 100%; }
     .view-display-id-media_page_list table.views-view-table .views-field.views-field-thumbnail__target-id {
@@ -275,6 +278,13 @@
 
 .layout-paragraphs-field .layout-paragraphs-layout-region {
   border: 1px dotted orange; }
+
+.field--widget-layout-paragraphs [role='dialog'] {
+  top: 50% !important;
+  left: 50% !important;
+  width: 1024px !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .ui-autocomplete {
   z-index: 10000; }

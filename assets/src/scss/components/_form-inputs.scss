@@ -7,6 +7,10 @@
     .form-type-checkbox {
       margin-bottom: 0;
     }
+    
+    .field--widget-options-pretty & {
+      display: block;
+    }
   }
   
   .form-radios {
@@ -17,7 +21,13 @@
     .form-type-radio {
       margin-bottom: 0;
     }
+    
+    .field--widget-options-pretty & {
+      display: block;
+    }
   }
+  
+  
 }
 
 @media screen and (min-width: 640px) {

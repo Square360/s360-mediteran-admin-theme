@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-09-We | 170027
+ * @build: yyyy-09-Th | 154032
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -27,6 +27,8 @@
   grid-gap: 5px; }
   .taxonomy--grid .form-checkboxes:not(.views-ui-dialog) .form-type-checkbox, [id*='edit-field-tax-'] .form-checkboxes:not(.views-ui-dialog) .form-type-checkbox {
     margin-bottom: 0; }
+  .field--widget-options-pretty .taxonomy--grid .form-checkboxes:not(.views-ui-dialog), .field--widget-options-pretty [id*='edit-field-tax-'] .form-checkboxes:not(.views-ui-dialog) {
+    display: block; }
 
 .taxonomy--grid .form-radios, [id*='edit-field-tax-'] .form-radios {
   display: -ms-grid;
@@ -35,6 +37,8 @@
   grid-gap: 5px; }
   .taxonomy--grid .form-radios .form-type-radio, [id*='edit-field-tax-'] .form-radios .form-type-radio {
     margin-bottom: 0; }
+  .field--widget-options-pretty .taxonomy--grid .form-radios, .field--widget-options-pretty [id*='edit-field-tax-'] .form-radios {
+    display: block; }
 
 @media screen and (min-width: 640px) {
   .form-select, .form-text, .form-textarea {

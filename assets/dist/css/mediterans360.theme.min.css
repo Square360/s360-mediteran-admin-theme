@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-09-Sa | 133427
+ * @build: yyyy-09-Sa | 192545
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -301,6 +301,19 @@
 
 .layout-paragraphs-field .layout-paragraphs-layout-region {
   border: 1px dotted orange; }
+
+.layout-paragraphs-field .field--label-inline {
+  display: table;
+  margin-bottom: .5em; }
+  .layout-paragraphs-field .field--label-inline .field__label {
+    display: table-cell;
+    font-weight: bold;
+    margin-right: 1em;
+    padding-right: .5rem;
+    opacity: 50%;
+    width: 89px; }
+  .layout-paragraphs-field .field--label-inline .field__item {
+    display: table-cell; }
 
 .field--widget-layout-paragraphs [role='dialog'] {
   top: 50% !important;

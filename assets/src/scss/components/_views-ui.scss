@@ -8,4 +8,29 @@
       background: #ededed;
     }
   }
+  
+  .form {
+    
+    &--inline {
+      
+      .form-item {
+        width: auto;
+      }
+      
+      .form-actions {
+        margin-left: auto;
+        background-color: transparent;
+      }
+    }
+  }
+  
+  [data-drupal-selector="edit-node-bulk-form"] {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+    > div {
+      margin-right: 1em;
+    }
+  }
 }

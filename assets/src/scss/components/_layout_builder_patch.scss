@@ -26,6 +26,24 @@
   .layout-paragraphs-layout-region {
     border: 1px dotted orange;
   }
+  
+  .field--label-inline {
+    display: table;
+    margin-bottom: .5em;
+    
+    .field__label {
+      display: table-cell;
+      font-weight: bold;
+      margin-right: 1em;
+      padding-right: .5rem;
+      opacity: 50%;
+      width: 89px;
+    }
+    .field__item {
+      display: table-cell;
+    }
+  }
+
 }
 
 

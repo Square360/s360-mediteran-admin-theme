@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-09-Sa | 192545
+ * @build: yyyy-09-Sa | 195845
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -295,9 +295,12 @@
   min-width: 83px; }
 
 .layout-paragraphs-field .layout-paragraphs-item {
-  border: 1px solid #00d7fe; }
+  border: 1px solid #999999; }
   .layout-paragraphs-disabled-items .layout-paragraphs-field .layout-paragraphs-item {
-    border: 1px solid #00d7fe; }
+    border: 1px solid #999999; }
+
+.layout-paragraphs-field .layout-paragraphs-layout {
+  border: 1px solid #5d749c; }
 
 .layout-paragraphs-field .layout-paragraphs-layout-region {
   border: 1px dotted orange; }
@@ -310,10 +313,20 @@
     font-weight: bold;
     margin-right: 1em;
     padding-right: .5rem;
-    opacity: 50%;
+    color: #999999;
     width: 89px; }
   .layout-paragraphs-field .field--label-inline .field__item {
     display: table-cell; }
+
+.layout-paragraphs-field label.paragraph-type-label {
+  color: white;
+  background-color: #5d749c;
+  border: none;
+  padding: .2em 1em; }
+
+.layout-paragraphs-field .paragraph--type--section label.paragraph-type-label {
+  color: white;
+  background-color: #999; }
 
 .field--widget-layout-paragraphs [role='dialog'] {
   top: 50% !important;

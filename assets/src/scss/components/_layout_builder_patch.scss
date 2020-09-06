@@ -16,11 +16,15 @@
   }
   
   .layout-paragraphs-item {
-    border: 1px solid #00d7fe;
+    border: 1px solid #999999;
     
     .layout-paragraphs-disabled-items & {
-      border: 1px solid #00d7fe;
+      border: 1px solid #999999;
     }
+  }
+  
+  .layout-paragraphs-layout {
+    border: 1px solid #5d749c;
   }
   
   .layout-paragraphs-layout-region {
@@ -36,12 +40,24 @@
       font-weight: bold;
       margin-right: 1em;
       padding-right: .5rem;
-      opacity: 50%;
+      color: #999999;
       width: 89px;
     }
     .field__item {
       display: table-cell;
     }
+  }
+  
+  label.paragraph-type-label {
+    color: white;
+    background-color: #5d749c;
+    border: none;
+    padding: .2em 1em;
+  }
+
+  .paragraph--type--section label.paragraph-type-label {
+      color: white;
+      background-color: #999;
   }
 
 }

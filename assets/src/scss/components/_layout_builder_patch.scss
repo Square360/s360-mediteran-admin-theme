@@ -58,11 +58,16 @@
     background-color: #5d749c;
     border: none;
     padding: .2em 1em;
+    @include font-awesome-icon($fa-var-th-list,'regular','before');
+    &:before {
+      
+    }
   }
 
   .paragraph--type--section label.paragraph-type-label {
       color: white;
       background-color: #999;
+      @include font-awesome-icon($fa-var-cube,'regular','before');
   }
 
 }

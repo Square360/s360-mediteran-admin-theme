@@ -57,10 +57,19 @@
     color: white;
     background-color: #5d749c;
     border: none;
-    padding: .2em 1em;
+    padding: .1em 1em;
+    right: unset;
+    bottom: unset;
+    top: 0;
+    left: 50%;
+    font-style: normal;
+    transform: translateX(-50%);
     @include font-awesome-icon($fa-var-th-list,'regular','before');
     &:before {
       
+    }
+    &:hover {
+      font-style: italic;
     }
   }
 

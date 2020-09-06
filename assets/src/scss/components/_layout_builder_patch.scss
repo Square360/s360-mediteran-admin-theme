@@ -42,9 +42,14 @@
       padding-right: .5rem;
       color: #999999;
       width: 89px;
+      vertical-align: top;
     }
     .field__item {
       display: table-cell;
+      vertical-align: top;
+      *:first-child {
+        margin-top: 0;
+      }
     }
   }
   

@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-09-Sa | 195845
+ * @build: yyyy-09-Sa | 203247
  */
 /* Wide screens */
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
@@ -314,9 +314,13 @@
     margin-right: 1em;
     padding-right: .5rem;
     color: #999999;
-    width: 89px; }
+    width: 89px;
+    vertical-align: top; }
   .layout-paragraphs-field .field--label-inline .field__item {
-    display: table-cell; }
+    display: table-cell;
+    vertical-align: top; }
+    .layout-paragraphs-field .field--label-inline .field__item *:first-child {
+      margin-top: 0; }
 
 .layout-paragraphs-field label.paragraph-type-label {
   color: white;

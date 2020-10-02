@@ -1,0 +1,23 @@
+.layout-paragraphs-field {
+  .layout-paragraphs-add-more-menu {
+    width: 55vw !important;
+    top: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(-90%);
+
+    .layout-paragraphs-add-more-menu__group--content {
+      //max-height: unset !important;
+
+      .layout-paragraphs-add-more-menu__item {
+        width: 20%;
+      }
+    }
+
+    &.beneath {
+      &::before {
+        top: 100%;
+      } 
+    }
+  }
+
+}

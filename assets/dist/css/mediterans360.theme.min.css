@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-09-Sa | 205700
+ * @build: yyyy-10-Fr | 112057
  */
 /*!
  * Font Awesome Pro 5.14.0 by @fontawesome - https://fontawesome.com
@@ -7494,4 +7494,15 @@ readers do not read off random characters that represent icons */
 
 .ui-autocomplete {
   z-index: 10000; }
+
+.layout-paragraphs-field .layout-paragraphs-add-more-menu {
+  width: 55vw !important;
+  top: auto !important;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) translateY(-90%);
+          transform: translateX(-50%) translateY(-90%); }
+  .layout-paragraphs-field .layout-paragraphs-add-more-menu .layout-paragraphs-add-more-menu__group--content .layout-paragraphs-add-more-menu__item {
+    width: 20%; }
+  .layout-paragraphs-field .layout-paragraphs-add-more-menu.beneath::before {
+    top: 100%; }
 

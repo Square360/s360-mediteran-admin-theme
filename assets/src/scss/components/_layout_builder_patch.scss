@@ -1,5 +1,7 @@
 .layout-paragraphs-field {
   .layout-paragraphs-actions {
+    z-index: 1000;
+
     input{
       &.layout-paragraphs-edit {
         text-indent: 17px;
@@ -21,14 +23,45 @@
     .layout-paragraphs-disabled-items & {
       border: 1px solid #999999;
     }
+
+    &:hover > label.paragraph-type-label {
+      opacity: .25;
+      transition: all .5s ease;
+    }
+
+    label.paragraph-type-label {
+      color: white;
+      background-color: #5d749c;
+      border: none;
+      padding: .1em 1em;
+      right: unset;
+      bottom: unset;
+      top: 0;
+      left: 50%;
+      font-style: normal;
+      transform: translateX(-50%);
+      @include font-awesome-icon($fa-var-th-list,'regular','before');
+      &:before {
+        
+      }
+      &:hover {
+        font-style: italic;
+      }
+    }
   }
   
   .layout-paragraphs-layout {
     border: 1px solid #5d749c;
+    &:hover {
+      border-color: #495b7a;
+    }
   }
   
   .layout-paragraphs-layout-region {
-    border: 1px dotted orange;
+    border: 1px dotted #ffa00e;
+    &:hover {
+      border-color: #d9880c;
+    }
   }
   
   .field--label-inline {
@@ -53,31 +86,7 @@
     }
   }
   
-  label.paragraph-type-label {
-    color: white;
-    background-color: #5d749c;
-    border: none;
-    padding: .1em 1em;
-    right: unset;
-    bottom: unset;
-    top: 0;
-    left: 50%;
-    font-style: normal;
-    transform: translateX(-50%);
-    @include font-awesome-icon($fa-var-th-list,'regular','before');
-    &:before {
-      
-    }
-    &:hover {
-      font-style: italic;
-    }
-  }
-
-  .paragraph--type--section label.paragraph-type-label {
-      color: white;
-      background-color: #999;
-      @include font-awesome-icon($fa-var-cube,'regular','before');
-  }
+  
 
 }
 

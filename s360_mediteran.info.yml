@@ -1,4 +1,4 @@
-name: Mediteran S360
+name: S360 Mediteran Theme
 type: theme
 description: 'Square360 Mods to the Mediteran Theme'
 package: Other
@@ -6,7 +6,7 @@ core_version_requirement: ^8 || ^9
 base theme: mediteran
 
 libraries:
-  - mediteran_s360/overrides
+  - s360_mediteran/360-mediteran.theme
 
 libraries-override:
   smart_date/smart_date:
@@ -25,4 +25,4 @@ regions:
   page_bottom: 'Page bottom'
   sidebar_first: 'First sidebar'
 
-screenshot: images/mediteran_s360.png
+screenshot: images/s360_mediteran.png

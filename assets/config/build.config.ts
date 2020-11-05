@@ -22,7 +22,7 @@ const BUILD_CONFIG = {
     }
   },
   entryFiles: [
-    'mediterans360.theme.js'
+    's360-mediteran.theme.js'
   ],
 
   getThemeFile: (extension) => {

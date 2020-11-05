@@ -4,9 +4,9 @@ dependencies:
   module:
     - user
   theme:
-    - mediteran_s360
-id: mediteran_s360_login
-theme: mediteran_s360
+    - s360_mediteran
+id: s360_mediteran_login
+theme: s360_mediteran
 region: content
 weight: 10
 provider: null

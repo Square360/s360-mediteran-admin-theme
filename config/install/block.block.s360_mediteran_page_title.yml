@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - mediteran_s360
-id: mediteran_s360_page_title
-theme: mediteran_s360
+    - s360_mediteran
+id: s360_mediteran_page_title
+theme: s360_mediteran
 region: header
 weight: -30
 provider: null

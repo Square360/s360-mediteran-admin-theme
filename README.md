@@ -13,15 +13,12 @@ Tweaks added for:
 ## To Add via Composer
 Add the new Square360 composer package repo to your composer file:
 ```
-"repositories": [{
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {   
-            "type": "composer", 
-            "url": "https://packages.square360.com/" 
-        }
-    ]
+"repositories": [
+  {
+    "type": "composer",
+    "url": "https://packages.drupal.org/8"
+  }
+]
 ```
 
 Then just do a normal composer require:

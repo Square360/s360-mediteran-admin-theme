@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - mediteran_s360
-id: mediteran_s360_messages
-theme: mediteran_s360
+    - s360_mediteran
+id: s360_mediteran_messages
+theme: s360_mediteran
 region: highlighted
 weight: 0
 provider: null

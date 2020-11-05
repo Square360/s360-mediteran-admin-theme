@@ -1,5 +1,0 @@
-overrides:
-   version: VERSION
-   css:
-    layout:
-      assets/dist/css/mediterans360.theme.min.css: { weight: 1000 }

@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - mediteran_s360
-id: mediteran_s360_secondary_local_tasks
-theme: mediteran_s360
+    - s360_mediteran
+id: s360_mediteran_secondary_local_tasks
+theme: s360_mediteran
 region: pre_content
 weight: 0
 provider: null

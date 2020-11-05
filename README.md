@@ -11,21 +11,20 @@ Tweaks added for:
 + Theme for Paragraphs Layout structure to be easier to read
 
 ## To Add via Composer
+Add the new Square360 composer package repo to your composer file:
 ```
-{
-  "type": "package",
-  "package": {
-      "name": "square360/mediteran",
-      "version": "1.2.0",
-      "type": "drupal-theme",
-      "extra": {
-          "installer-name": "mediteran_s360"
-      },
-      "source": {
-          "url": "https://bitbucket.org/sq360_sysadmin/mediteran-s360-admin-theme.git",
-          "type": "git",
-          "reference": "1.2.0"
-      }
-  }
-},
+"repositories": [{
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {   
+            "type": "composer", 
+            "url": "https://packages.square360.com/" 
+        }
+    ]
+```
+
+Then just do a normal composer require:
+```
+composer require "square360/s360_mediteran"
 ```

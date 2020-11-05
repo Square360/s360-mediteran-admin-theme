@@ -1,0 +1,10 @@
+{
+  "name": "square360/mediteran",
+  "description": "Drupal administration theme with modern minimalist design, and Square360 tweaks",
+  "type": "drupal-theme",
+  "homepage": "https://bitbucket.org/sq360_sysadmin/mediteran-s360-admin-theme",
+  "require": {
+      "drupal/mediteran": "^1.12"
+    },
+  "license": "GPL-2.0+"
+}

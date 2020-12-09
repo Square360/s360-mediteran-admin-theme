@@ -24,12 +24,32 @@
       border: 1px solid #999999;
     }
 
-    &:hover > label.paragraph-type-label {
+    &:hover > label.paragraph-type-label, &:hover > label.paragraph-layout-label {
       opacity: .25;
       transition: all .5s ease;
     }
 
     label.paragraph-type-label {
+      color: white;
+      background-color: #ffa00e;
+      border: none;
+      padding: .1em 1em;
+      right: unset;
+      bottom: unset;
+      top: 0;
+      left: 50%;
+      font-style: normal;
+      transform: translateX(-50%);
+      @include font-awesome-icon($fa-var-cube,'regular','before');
+      &:before {
+        
+      }
+      &:hover {
+        font-style: italic;
+      }
+    }
+
+    label.paragraph-layout-label {
       color: white;
       background-color: #5d749c;
       border: none;
@@ -40,7 +60,7 @@
       left: 50%;
       font-style: normal;
       transform: translateX(-50%);
-      @include font-awesome-icon($fa-var-th-list,'regular','before');
+      @include font-awesome-icon($fa-var-th-large,'regular','before');
       &:before {
         
       }

@@ -38,11 +38,15 @@
     }
   }
 
-
-  .paragraph--type--section label.paragraph-type-label {
+   .paragraph--type--section label.paragraph-type-label {
       color: white;
       background-color: #999;
       @include font-awesome-icon($fa-var-cube,'regular','before');
+  }
+
+  .layout-paragraphs-layout-region .media.media--type-image img {
+    max-width: 100%;
+    height: auto;
   }
 
 }

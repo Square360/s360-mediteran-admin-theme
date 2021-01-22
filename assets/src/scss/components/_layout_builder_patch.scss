@@ -24,12 +24,12 @@
       border: 1px solid #999999;
     }
 
-    &:hover > label.paragraph-type-label, &:hover > label.paragraph-layout-label {
+    &:hover > label.paragraph-type--label, &:hover > label.paragraph-layout-label {
       opacity: .25;
       transition: all .5s ease;
     }
 
-    label.paragraph-type-label {
+    label.paragraph-type--label {
       color: white;
       background-color: #ffa00e;
       border: none;

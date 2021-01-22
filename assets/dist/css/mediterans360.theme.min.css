@@ -2,7 +2,7 @@
  * @client: Square360
  * @description: 
  * @version: 1.0.0
- * @build: yyyy-01-We | 103536
+ * @build: yyyy-01-Fr | 135802
  */
 /*!
  * Font Awesome Pro 5.15.1 by @fontawesome - https://fontawesome.com
@@ -7454,11 +7454,11 @@ readers do not read off random characters that represent icons */
   border: 1px solid #999999; }
   .layout-paragraphs-disabled-items .layout-paragraphs-field .layout-paragraphs-item {
     border: 1px solid #999999; }
-  .layout-paragraphs-field .layout-paragraphs-item:hover > label.paragraph-type-label, .layout-paragraphs-field .layout-paragraphs-item:hover > label.paragraph-layout-label {
+  .layout-paragraphs-field .layout-paragraphs-item:hover > label.paragraph-type--label, .layout-paragraphs-field .layout-paragraphs-item:hover > label.paragraph-layout-label {
     opacity: .25;
     -webkit-transition: all .5s ease;
     transition: all .5s ease; }
-  .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type-label {
+  .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type--label {
     color: white;
     background-color: #ffa00e;
     border: none;
@@ -7470,7 +7470,7 @@ readers do not read off random characters that represent icons */
     font-style: normal;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-    .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type-label::before {
+    .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type--label::before {
       content: "\f1b2";
       display: inline-block;
       font-family: "Font Awesome 5 Pro";
@@ -7481,7 +7481,7 @@ readers do not read off random characters that represent icons */
       text-rendering: auto;
       vertical-align: middle;
       margin-right: 0.25em; }
-    .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type-label:hover {
+    .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type--label:hover {
       font-style: italic; }
   .layout-paragraphs-field .layout-paragraphs-item label.paragraph-layout-label {
     color: white;
@@ -7575,10 +7575,10 @@ readers do not read off random characters that represent icons */
   .layout-paragraphs-field .layout-paragraphs-layout-region > .layout-paragraphs-item > .layout-paragraphs-add-content__toggle:hover {
     border-color: #d9880c; }
 
-.layout-paragraphs-field .paragraph--type--section label.paragraph-type-label {
+.layout-paragraphs-field .paragraph--type--section label.paragraph-type--label {
   color: white;
   background-color: #999; }
-  .layout-paragraphs-field .paragraph--type--section label.paragraph-type-label::before {
+  .layout-paragraphs-field .paragraph--type--section label.paragraph-type--label::before {
     content: "\f1b2";
     display: inline-block;
     font-family: "Font Awesome 5 Pro";

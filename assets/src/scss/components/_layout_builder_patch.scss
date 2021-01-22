@@ -24,12 +24,12 @@
       border: 1px solid #999999;
     }
 
-    &:hover > label.paragraph-type-label, &:hover > label.paragraph-layout-label {
+    &:hover > label.paragraph-type--label, &:hover > label.paragraph-layout-label {
       opacity: .25;
       transition: all .5s ease;
     }
 
-    label.paragraph-type-label {
+    label.paragraph-type--label {
       color: white;
       background-color: #ffa00e;
       border: none;
@@ -39,6 +39,7 @@
       top: 0;
       left: 50%;
       font-style: normal;
+      font-size: 83%;
       transform: translateX(-50%);
       @include font-awesome-icon($fa-var-cube,'regular','before');
       &:before {
@@ -49,7 +50,15 @@
       }
     }
 
-    label.paragraph-layout-label {
+  }
+  
+  .layout-paragraphs-layout {
+    border: 1px solid #5d749c;
+    &:hover {
+      border-color: #495b7a;
+    }
+
+    > label.paragraph-type--label {
       color: white;
       background-color: #5d749c;
       border: none;
@@ -59,6 +68,7 @@
       top: 0;
       left: 50%;
       font-style: normal;
+      font-size: 83%;
       transform: translateX(-50%);
       @include font-awesome-icon($fa-var-th-large,'regular','before');
       &:before {
@@ -67,13 +77,6 @@
       &:hover {
         font-style: italic;
       }
-    }
-  }
-  
-  .layout-paragraphs-layout {
-    border: 1px solid #5d749c;
-    &:hover {
-      border-color: #495b7a;
     }
   }
   

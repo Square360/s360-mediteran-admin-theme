@@ -38,7 +38,7 @@
     }
   }
 
-   .paragraph--type--section label.paragraph-type-label {
+   .paragraph--type--section label.paragraph-type--label {
       color: white;
       background-color: #999;
       @include font-awesome-icon($fa-var-cube,'regular','before');

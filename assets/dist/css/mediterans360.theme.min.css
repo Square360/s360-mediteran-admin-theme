@@ -7468,6 +7468,7 @@ readers do not read off random characters that represent icons */
     top: 0;
     left: 50%;
     font-style: normal;
+    font-size: 83%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
     .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type--label::before {
@@ -7483,7 +7484,12 @@ readers do not read off random characters that represent icons */
       margin-right: 0.25em; }
     .layout-paragraphs-field .layout-paragraphs-item label.paragraph-type--label:hover {
       font-style: italic; }
-  .layout-paragraphs-field .layout-paragraphs-item label.paragraph-layout-label {
+
+.layout-paragraphs-field .layout-paragraphs-layout {
+  border: 1px solid #5d749c; }
+  .layout-paragraphs-field .layout-paragraphs-layout:hover {
+    border-color: #495b7a; }
+  .layout-paragraphs-field .layout-paragraphs-layout > label.paragraph-type--label {
     color: white;
     background-color: #5d749c;
     border: none;
@@ -7493,9 +7499,10 @@ readers do not read off random characters that represent icons */
     top: 0;
     left: 50%;
     font-style: normal;
+    font-size: 83%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-    .layout-paragraphs-field .layout-paragraphs-item label.paragraph-layout-label::before {
+    .layout-paragraphs-field .layout-paragraphs-layout > label.paragraph-type--label::before {
       content: "\f009";
       display: inline-block;
       font-family: "Font Awesome 5 Pro";
@@ -7506,13 +7513,8 @@ readers do not read off random characters that represent icons */
       text-rendering: auto;
       vertical-align: middle;
       margin-right: 0.25em; }
-    .layout-paragraphs-field .layout-paragraphs-item label.paragraph-layout-label:hover {
+    .layout-paragraphs-field .layout-paragraphs-layout > label.paragraph-type--label:hover {
       font-style: italic; }
-
-.layout-paragraphs-field .layout-paragraphs-layout {
-  border: 1px solid #5d749c; }
-  .layout-paragraphs-field .layout-paragraphs-layout:hover {
-    border-color: #495b7a; }
 
 .layout-paragraphs-field .layout-paragraphs-layout-region {
   border: 1px dotted #ffa00e; }

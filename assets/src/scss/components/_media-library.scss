@@ -15,6 +15,12 @@
       top: 2px;
     }
   }
+
+  &.js-form-wrapper.form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+    grid-gap: 10px;
+  }
 }
 
 .js-media-library-add-form {

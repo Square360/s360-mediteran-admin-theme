@@ -1,0 +1,12 @@
+@import "~s360-fundamental-toolkit/scss/toolkit";
+
+@import "~@fortawesome/fontawesome-pro/scss/variables";
+
+// CORE
+@import "./core";
+
+// override of mediteran layout
+@import './layout/node-add';
+
+// component apprearances
+@import './components';

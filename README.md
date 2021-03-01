@@ -3,25 +3,23 @@
 Original theme located at: [Mediteran Theme](https://www.drupal.org/project/mediteran)
 
 **This is a child theme, so it is required you install Mediteran first!**
-**Has been updated for Drupal 8.8 or 9 compatibility
+Has been updated for Drupal 8.8 or 9 compatibility
 
 Tweaks added for:
 + Checkbox and radios display as a grid
 + Made main content column wider than standard
 + Theme for Paragraphs Layout structure to be easier to read
 
-## To Add via Composer
+## Add via Composer
 Add the new Square360 composer package repo to your composer file:
 ```
-"repositories": [{
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {   
-            "type": "composer", 
-            "url": "https://packages.square360.com/" 
-        }
-    ]
+"repositories": [
+  ...
+  {
+    "type": "composer",
+    "url": "https://packages.square360.com"
+  }
+]
 ```
 
 Then just do a normal composer require:

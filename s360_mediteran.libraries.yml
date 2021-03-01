@@ -1,0 +1,8 @@
+s360_mediteran.theme:
+  version: VERSION
+  css:
+    theme:
+      assets/dist/css/s360-mediteran.theme.min.css: { weight: 1000 }
+      assets/dist/css/s360-mediteran.fontawesome.min.css: { weight: 1000 }
+      css/components/dialog.css: { weight: 1000 }
+      css/media-library/media-library.css: { weight: 1000 }

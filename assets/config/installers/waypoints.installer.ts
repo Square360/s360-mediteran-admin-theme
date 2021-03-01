@@ -1,25 +1,21 @@
 import * as path from 'path';
 import * as shellJs from 'shelljs';
+import { kebabCase } from 's360-fundamental-toolkit';
 
-import BUILD_CONFIG from '../build.config';
+import { PROJECT_CONFIG } from '../project.config';
+
+// Use destructuring to get variables from PROJECT_CONFIG.
+const { projectName: PROJECT_NAME } = PROJECT_CONFIG;
 
 console.log('\n--------------------------------------------------');
 console.log('Installing Waypoints.');
 
 // --------------------------------------------------
-// GET THE *.theme.js FILE
-// --------------------------------------------------
-
-const THEME_JS_FILE: string = BUILD_CONFIG.getThemeFile('js');
-
-// --------------------------------------------------
 // INSTALL waypoints
-// --------------------------------------------------
 
 shellJs.exec('yarn add waypoints', { silent: true }, () => {
   // --------------------------------------------------
-  // UPDATE THE *.theme.js FILE PLACEHOLDER
-  // --------------------------------------------------
+  // UPDATE THE theme.js FILE PLACEHOLDER
 
   shellJs.sed(
     '-i',
@@ -27,7 +23,7 @@ shellJs.exec('yarn add waypoints', { silent: true }, () => {
       "require('waypoints/lib/jquery.waypoints.js');",
       "require('waypoints/lib/shortcuts/sticky.js');"
     ].join('\n'),
-    path.resolve(`src/js/${ THEME_JS_FILE }`)
+    path.resolve(`src/js/${ kebabCase(PROJECT_NAME) }.theme.js`)
   );
 
   console.log('\nInstallation Complete!');
@@ -35,13 +31,7 @@ shellJs.exec('yarn add waypoints', { silent: true }, () => {
 
   // --------------------------------------------------
   // REMOVE SETUP SCRIPTS
-  // --------------------------------------------------
 
-  shellJs.rm(path.resolve('config/.installers/waypoints.*'));
-
-  shellJs.sed(
-    '-i',
-    /.*:waypoints.*/, '',
-    path.resolve('package.json')
-  );
+  shellJs.rm(path.resolve('config/installers/waypoints.*'));
+  shellJs.sed('-i', /.*:waypoints.*/, '', path.resolve('package.json'));
 });

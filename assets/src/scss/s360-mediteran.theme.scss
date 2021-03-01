@@ -1,10 +1,6 @@
-@import "~s360-fundamental-toolkit";
-//@import "~s360-fundamental-toolkit/scss/reset";
+@import "~s360-fundamental-toolkit/scss/toolkit";
 
-//font-awesome
-$fa-font-path: "~@fortawesome/fontawesome-pro/webfonts" !default;
-@import "~@fortawesome/fontawesome-pro/scss/fontawesome";
-@import "~@fortawesome/fontawesome-pro/scss/regular";
+@import "~@fortawesome/fontawesome-pro/scss/variables";
 
 // CORE
 @import "./core";

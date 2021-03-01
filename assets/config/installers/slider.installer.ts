@@ -1,22 +1,18 @@
 import * as path from 'path';
 import * as shellJs from 'shelljs';
 import * as readlineSync from 'readline-sync';
+import { kebabCase } from 's360-fundamental-toolkit';
 
-import BUILD_CONFIG from '../build.config';
+import {PROJECT_CONFIG} from '../project.config';
+
+// Use destructuring to get variables from PROJECT_CONFIG.
+const { projectName: PROJECT_NAME } = PROJECT_CONFIG;
 
 console.log('\n--------------------------------------------------');
 console.log('Which slider library do you want to install?');
 
 // --------------------------------------------------
-// GET THE *.theme.* FILES
-// --------------------------------------------------
-
-const THEME_JS_FILE: string = BUILD_CONFIG.getThemeFile('js');
-const THEME_SCSS_FILE: string = BUILD_CONFIG.getThemeFile('scss');
-
-// --------------------------------------------------
 // DEFINE THE AVAILABLE SLIDER LIBRARIES
-// --------------------------------------------------
 
 const SLIDER_LIBRARIES: any[] = [
   {
@@ -47,7 +43,6 @@ const SLIDER_LIBRARIES: any[] = [
 
 // --------------------------------------------------
 // ASK THE USER FOR THEIR INPUT
-// --------------------------------------------------
 
 const SLIDER_LIBRARY_INDEX: number = readlineSync.keyInSelect(
   SLIDER_LIBRARIES.map(sliderLibrary => sliderLibrary['name']),
@@ -59,23 +54,21 @@ if (SLIDER_LIBRARY_INDEX !== -1) {
 
   // --------------------------------------------------
   // INSTALL THE SELECTED SLIDER LIBRARY
-  // --------------------------------------------------
 
   shellJs.exec(`yarn add ${ SLIDER_LIBRARIES[SLIDER_LIBRARY_INDEX].package }`, { silent: true }, () => {
     // --------------------------------------------------
     // UPDATE THE *.theme.js/.scss FILE PLACEHOLDERS
-    // --------------------------------------------------
 
     shellJs.sed(
       '-i',
       /\/\*SLIDER\*\//, SLIDER_LIBRARIES[SLIDER_LIBRARY_INDEX].js,
-      path.resolve(`src/js/${ THEME_JS_FILE }`)
+      path.resolve(`src/js/${ kebabCase(PROJECT_NAME) }.theme.js`)
     );
 
     shellJs.sed(
       '-i',
       /\/\*SLIDER\*\//, SLIDER_LIBRARIES[SLIDER_LIBRARY_INDEX].css,
-      path.resolve(`src/scss/${ THEME_SCSS_FILE }`)
+      path.resolve(`src/scss/${ kebabCase(PROJECT_NAME) }.theme.scss`)
     );
 
 
@@ -84,9 +77,8 @@ if (SLIDER_LIBRARY_INDEX !== -1) {
 
     // --------------------------------------------------
     // REMOVE SETUP SCRIPTS
-    // --------------------------------------------------
 
-    shellJs.rm(path.resolve('config/.installers/slider.*'));
+    shellJs.rm(path.resolve('config/installers/slider.*'));
     shellJs.sed('-i', /.*:slider.*/, '', path.resolve('package.json'));
   });
 }

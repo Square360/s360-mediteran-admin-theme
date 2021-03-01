@@ -7,17 +7,10 @@ $fa-font-path: "~@fortawesome/fontawesome-pro/webfonts" !default;
 @import "~@fortawesome/fontawesome-pro/scss/regular";
 
 // CORE
-@import "./core/index";
+@import "./core";
 
 // override of mediteran layout
 @import './layout/node-add';
 
 // component apprearances
-@import './components/form-inputs';
-@import './components/media-library';
-@import './components/sections';
-@import './components/views-ui';
-@import './components/smart-date-module';
-@import './components/_layout_builder_patch';
-@import './components/_paragraphs-autocomplete';
-@import './components/_layout-paragraphs-field';
+@import './components';

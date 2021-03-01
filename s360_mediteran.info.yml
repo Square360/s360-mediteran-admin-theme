@@ -6,7 +6,11 @@ core_version_requirement: ^8 || ^9
 base theme: mediteran
 
 libraries:
+<<<<<<< Updated upstream:s360_mediteran.info.yml
   - s360_mediteran/s360-mediteran.theme
+=======
+  - s360_mediteran/s360_mediteran.theme
+>>>>>>> Stashed changes:mediteran_s360.info.yml
 
 libraries-override:
   smart_date/smart_date:
@@ -25,4 +29,8 @@ regions:
   page_bottom: 'Page bottom'
   sidebar_first: 'First sidebar'
 
+<<<<<<< Updated upstream:s360_mediteran.info.yml
 screenshot: images/s360_mediteran.png
+=======
+screenshot: images/s360-mediteran.png
+>>>>>>> Stashed changes:mediteran_s360.info.yml

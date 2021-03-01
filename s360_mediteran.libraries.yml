@@ -1,5 +1,8 @@
-s360-mediteran.theme:
+s360_mediteran.theme:
   version: VERSION
   css:
-    theme:
+    layout:
       assets/dist/css/s360-mediteran.theme.min.css: { weight: 1000 }
+    theme:
+      css/components/dialog.css: { weight: 1000 }
+      css/media-library/media-library.css: { weight: 1000 }

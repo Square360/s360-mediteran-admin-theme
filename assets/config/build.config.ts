@@ -5,7 +5,7 @@ import PROVIDE_PLUGIN_CONFIG from './webpack/plugins/provide.config';
 import TERSER_PLUGIN_CONFIG from './webpack/plugins/terser.config';
 
 const BUILD_CONFIG = {
-  projectName: 'MediteranS360',
+  projectName: 's360-mediteran',
   pkg: require('../package.json'),
   webpack: {
     loaders: {

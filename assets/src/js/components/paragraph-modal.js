@@ -4,7 +4,7 @@ Drupal.behaviors.addModalParagraphsId = {
 
     $('.paragraph--type--modal').each(function(){
       _modalId = $(this).attr('id');
-      $(this).append('<div><label>Modal ID:</label> ' + _modalId + '</div>');
+      $(this).append('<div><strong>Modal ID:</strong> ' + _modalId + '</div>');
     });
   }
 };

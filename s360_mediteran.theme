@@ -1,21 +1,2 @@
 <?php
 
-/**
- * @file
- * Functions to support theming in the s360_mediteran theme.
- */
-use Drupal\Component\Utility\Html;
-
-/**
- * extends preprocess paragraph
- * 
- */
-
-function s360_mediteran_preprocess_paragraph(&$vars) {
-  $elements = $vars['elements'];
-  if (isset($elements['#paragraph'])) {
-    $paragraph = $elements['#paragraph'];
-    $paragraph_bundle = $paragraph->bundle();
-    $vars['attributes']['data-paragraph-id'] = 'paragraph-' . Html::getClass($paragraph_bundle) . $paragraph->id();
-  }
-}

@@ -1,0 +1,8 @@
+/*  re-patch the firefox patch for forms.css on the admin side */
+
+
+@-moz-document url-prefix() {
+  fieldset:not(.fieldgroup) {
+    display: inline-block;
+  }
+}

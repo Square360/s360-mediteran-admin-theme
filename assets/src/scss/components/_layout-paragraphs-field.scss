@@ -1,4 +1,4 @@
-.layout-paragraphs-field {
+.field--widget-layout-paragraphs {
   .layout-paragraphs-add-more-menu {
     width: 495px !important;
     left: 50% !important;
@@ -36,12 +36,6 @@
     &:hover {
       border-color: #d9880c;
     }
-  }
-
-   .paragraph--type--section label.paragraph-type--label {
-      color: white;
-      background-color: #999;
-      @include font-awesome-icon($fa-var-cube,'regular','before');
   }
 
   .layout-paragraphs-layout-region .media.media--type-image img {

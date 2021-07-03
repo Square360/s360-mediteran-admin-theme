@@ -5,8 +5,6 @@
 // CORE
 @import "./core";
 
-// override of mediteran layout
-@import './layout/node-add';
+@use './layout';
 
-// component apprearances
 @import './components';

@@ -1,33 +1,34 @@
-.taxonomy--grid, [id*='edit-field-tax-'] {
+.taxonomy--grid,
+[id*='edit-field-tax-'] {
   .form-checkboxes:not(.views-ui-dialog) {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     grid-gap: 5px;
-  
+
     .form-type-checkbox {
       margin-bottom: 0;
     }
-    
+
     .field--widget-options-pretty & {
       display: block;
     }
   }
-  
+
   .form-radios {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(175px,1fr));
     grid-gap: 5px;
-  
+
     .form-type-radio {
       margin-bottom: 0;
     }
-    
+
     .field--widget-options-pretty & {
       display: block;
     }
   }
-  
-  
+
+
 }
 
 @media screen and (min-width: 640px) {
@@ -43,7 +44,7 @@
     .field--type-string {
       margin-bottom: 5px;
     }
-    
+
     .field-group-html-element{
       .fieldset--meta {
         padding: 5px;
@@ -58,7 +59,7 @@
         align-items: center;
       }
     }
-    
+
   }
 }
 

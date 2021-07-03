@@ -5,8 +5,8 @@
   "homepage": "https://bitbucket.org/sq360_sysadmin/s360-mediteran-admin-theme",
   "keywords": ["Drupal", "Theme", "Admin Theme"],
   "require": {
-      "drupal/mediteran": "^1.17"
+      "drupal/mediteran": "^1.24"
     },
   "license": "GPL-2.0+",
-  "version": "2.1.3"
+  "version": "2.1.6"
 }

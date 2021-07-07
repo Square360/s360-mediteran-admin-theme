@@ -1,18 +1,18 @@
 .layout-node-form {
   @media (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
     display: grid;
-    grid-template-columns: 1fr 25%;
+    grid-template-columns: 75% auto;
     grid-gap: 20px;
 
     .layout-region-node-main,
     .layout-region-node-footer,
     .layout-region-node-secondary {
       float: unset;
-      width: 100%;
+      width: auto;
     }
 
     .layout-region-node-secondary {
-      width: 25%;
+      width: auto;
     }
   }
 }

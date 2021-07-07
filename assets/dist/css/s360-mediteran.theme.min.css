@@ -42,11 +42,6 @@
 .field--type-smartdate div[class*='duration'] {
   margin: 0 8%; }
 
-/*  re-patch the firefox patch for forms.css on the admin side */
-@-moz-document url-prefix() {
-  fieldset:not(.fieldgroup) {
-    display: inline-block; } }
-
 .form-checkboxes:not(.views-ui-dialog),
 .form-radios:not(.views-ui-dialog) {
   display: -ms-grid;

@@ -6,7 +6,7 @@
   "keywords": ["Drupal", "Theme", "Admin Theme"],
   "require": {
       "drupal/mediteran": "^1.24"
-    },
+  },
   "license": "GPL-2.0+",
-  "version": "2.1.7"
+  "version": "2.2.0"
 }

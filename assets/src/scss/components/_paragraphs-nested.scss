@@ -1,0 +1,21 @@
+.paragraphs-nested {
+  .field--type-string {
+    margin-bottom: 5px;
+  }
+
+  .field-group-html-element {
+    .fieldset--meta {
+      padding: 5px;
+      border: 1px solid #00000033;
+    }
+
+    .fieldset--columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 5px;
+      border: 1px dotted #00000022;
+      margin-bottom: 5px;
+      align-items: center;
+    }
+  }
+}

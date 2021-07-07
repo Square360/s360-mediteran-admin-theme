@@ -1,10 +1,6 @@
-@import './firefox-patch';
-@import './form-inputs';
+@import './field--type-smartdate';
+@import './forms';
 @import './media-library';
-@import './sections';
-@import './views-ui';
-@import './smart-date-module';
-@import './layout-builder-patch';
-@import './paragraphs-autocomplete';
-@import './layout-paragraphs-field';
-@import './paragraphs-modal';
+@import './paragraphs-nested';
+@import './ui-autocomplete';
+@import './view';

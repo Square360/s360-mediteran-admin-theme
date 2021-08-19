@@ -1,6 +1,6 @@
 form {
   // Only apply when editing a node or taxonomy-term.
-  &[id^="node"],
+  &[class*="node-form"],
   &[id^="taxonomy-term"] {
     .form-checkboxes,
     .form-radios {

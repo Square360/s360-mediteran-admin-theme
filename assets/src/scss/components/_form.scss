@@ -5,9 +5,13 @@ form {
     .form-checkboxes,
     .form-radios {
       &:not(.views-ui-dialog) {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 5px;
+        display: fle;
+        flex-wrap: wrap;
+
+        .form-type-radio,
+        .form-type-checkbox {
+          padding: 0;
+        }
 
         .form-item {
           margin-bottom: 0;

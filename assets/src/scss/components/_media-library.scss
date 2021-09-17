@@ -8,7 +8,7 @@
     width: auto;
     padding: 1em;
   }
-  
+
   .js-form-item {
     .media-library-edit__link {
       right: 0px;
@@ -61,6 +61,9 @@
       margin-top: 1.5em;
     }
 
+    // Newer class is "media-library-grid-form__rows", "views__rows" is for
+    // backwards compatibility.
+    .media-library-grid-form__rows,
     .views__rows {
       width: 100%;
       display: grid;
@@ -105,7 +108,7 @@
       border: 1px solid #ccc;
       display: inline-flex;
       flex-direction: column;
-      
+
       &.checked {
         border-color: green;
         border-width: 2px;
@@ -159,11 +162,11 @@
     .image-preview {
       display: block;
     }
-    
+
     .focal-point-indicator {
       width: 1px;
       height: 1px;
     }
   }
-  
+
 }

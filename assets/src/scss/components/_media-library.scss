@@ -1,6 +1,49 @@
 /// **************************************************
 /// Add or select media form styles
 
+#media-library-add-form-wrapper {
+  background-color: #d9e8f4;
+  padding: 1rem;
+  border-radius: 4px;
+
+  .form-type-managed-file {
+    margin-bottom: 0;
+  }
+
+  .media-library-add-form__added-media {
+    @extend %semantic-list;
+  }
+}
+
+.view-media-library {
+  .view-header {
+    margin: 1em 0;
+    text-align: right;
+  }
+  .views-display-link {
+    margin: 0;
+    color: #333;
+    line-height: 1;
+    border-radius: 26px;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+
+    &.is-active,
+    &:hover {
+      background-color: #d9e8f4;
+    }
+  }
+  .views-display-link-widget {
+    margin-right: 1em;
+    @include font-awesome-icon($fa-var-th-large, 'solid', 'before');
+  }
+  .views-display-link-widget_table {
+    @include font-awesome-icon($fa-var-list, 'solid', 'before');
+  }
+}
+
 .js-media-library-views-form {
   .media-library-item--grid {
 

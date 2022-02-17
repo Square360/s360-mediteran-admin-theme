@@ -1,8 +1,14 @@
 /*!
  * @client: Square360
  * @version: 2.0.0
- * @build: 2022-02-16 | 145233
+ * @build: 2022-02-17 | 102520
  */
+#media-library-add-form-wrapper .media-library-add-form__added-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
   .layout-node-form {
     display: -ms-grid;
@@ -74,6 +80,61 @@ form[id^=taxonomy-term] .form-radios:not(.views-ui-dialog) .form-item {
 .field--widget-options-pretty form[class*=node-form] .form-radios:not(.views-ui-dialog), .field--widget-options-pretty form[id^=taxonomy-term] .form-checkboxes:not(.views-ui-dialog),
 .field--widget-options-pretty form[id^=taxonomy-term] .form-radios:not(.views-ui-dialog) {
   display: block;
+}
+
+#media-library-add-form-wrapper {
+  background-color: #d9e8f4;
+  padding: 1rem;
+  border-radius: 4px;
+}
+#media-library-add-form-wrapper .form-type-managed-file {
+  margin-bottom: 0;
+}
+.view-media-library .view-header {
+  margin: 1em 0;
+  text-align: right;
+}
+.view-media-library .views-display-link {
+  margin: 0;
+  color: #333;
+  line-height: 1;
+  border-radius: 26px;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.view-media-library .views-display-link.is-active, .view-media-library .views-display-link:hover {
+  background-color: #d9e8f4;
+}
+.view-media-library .views-display-link-widget {
+  margin-right: 1em;
+}
+.view-media-library .views-display-link-widget::before {
+  content: "\f009";
+  display: inline-block;
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-rendering: auto;
+  vertical-align: middle;
+  margin-right: 0.25em;
+}
+.view-media-library .views-display-link-widget_table::before {
+  content: "\f03a";
+  display: inline-block;
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-rendering: auto;
+  vertical-align: middle;
+  margin-right: 0.25em;
 }
 
 .js-media-library-views-form .media-library-item--grid.is-hover .media_selected-image .js-media-library-item-preview {
@@ -190,6 +251,14 @@ form[id^=taxonomy-term] .form-radios:not(.views-ui-dialog) .form-item {
   padding: 1em;
   margin-bottom: 1em;
   background: #ededed;
+}
+.view .view-filters .views-exposed-form .form--inline {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.view .view-filters .views-exposed-form .form-submit {
+  margin-top: 10px;
 }
 .view .form--inline .form-item {
   width: auto;

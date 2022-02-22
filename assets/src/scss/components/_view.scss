@@ -5,6 +5,14 @@
       padding: 1em;
       margin-bottom: 1em;
       background: #ededed;
+
+      .form--inline {
+        align-items: center;
+      }
+
+      .form-submit {
+        margin-top: 10px;
+      }
     }
   }
 

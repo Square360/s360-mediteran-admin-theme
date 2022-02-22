@@ -1,0 +1,34 @@
+list:
+  changes:
+    - '1'
+    - 5.0.0
+    - 5.9.0
+  label: List
+  search:
+    terms:
+      - checklist
+      - completed
+      - done
+      - finished
+      - ol
+      - todo
+      - ul
+  styles:
+    - solid
+  unicode: f03a
+  voted: false
+th-large:
+  changes:
+    - '1'
+    - 5.0.0
+  label: th-large
+  search:
+    terms:
+      - blocks
+      - boxes
+      - grid
+      - squares
+  styles:
+    - solid
+  unicode: f009
+  voted: false

@@ -1,172 +1,164 @@
-@media screen and (min-width: 640px) {
+/// **************************************************
+/// Add or select media form styles
+
+#media-library-add-form-wrapper {
+  background-color: #d9e8f4;
+  padding: 1rem;
+  border-radius: 4px;
+
+  .form-type-managed-file {
+    margin-bottom: 0;
+  }
+
+  .media-library-add-form__added-media {
+    @extend %semantic-list;
+  }
+}
+
+.view-media-library {
+  .view-header {
+    margin: 1em 0;
+    text-align: right;
+  }
+  .views-display-link {
+    margin: 0;
+    color: #333;
+    line-height: 1;
+    border-radius: 26px;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+
+    &.is-active,
+    &:hover {
+      background-color: #d9e8f4;
+    }
+  }
+  .views-display-link-widget {
+    margin-right: 1em;
+    @include font-awesome-icon($fa-var-th-large, 'solid', 'before');
+  }
+  .views-display-link-widget_table {
+    @include font-awesome-icon($fa-var-list, 'solid', 'before');
+  }
+}
+
+.js-media-library-views-form {
+  .media-library-item--grid {
+
+    // Only when mouse is hovering over media.
+    &.is-hover {
+      .media_selected-image {
+        .js-media-library-item-preview {
+          box-shadow: 0 0 0 2px #000;
+        }
+      }
+    }
+
+    // Show when media is checked.
+    &.checked {
+      .media_selected-image {
+        .js-media-library-item-preview {
+          border-color: #0678be;
+          box-shadow: 0 0 0 2px #0678be;
+        }
+      }
+    }
+
+    // Prevent multiple media from being selected.
+    &.media-library-item--disabled {
+      pointer-events: none;
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      .media_selected-image {
+        .js-media-library-item-preview {
+          border-color: #ccc;
+        }
+      }
+    }
+
+    .js-click-to-select-checkbox {
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      left: 10px;
+
+      input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+/// **************************************************
+/// Display of images
+
+.js-media-library-selection,
+.media-library-grid-form__rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(225px, 1fr));
+  grid-gap: 10px;
+}
 
 .js-media-library-selection {
+  margin-bottom: 20px;
+}
+
+/// **************************************************
+/// Styles for the image thumbnails
+
+.js-media-library-item {
+  position: relative;
+
+  // Style the remove buttom.
+  input[type="submit"] {
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.75rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath fill='%230678be' d='M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z'/%3E%3C/svg%3E");
+    font-size: 0;
+    top: 10px;
+    right: 10px;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+  }
+
   .media_selected-image {
-    border: 1px solid #999;
-    margin-bottom: .5em;
-    background-color: $color-white;
-    width: auto;
-    padding: 1em;
-  }
-
-  .js-form-item {
-    .media-library-edit__link {
-      right: 0px;
-      top: 2px;
-    }
-  }
-
-  &.js-form-wrapper.form-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
-    grid-gap: 10px;
-  }
-}
-
-.js-media-library-add-form {
-  .item-list {
-    ul {
-      list-style-type: none;
-      li {
-        max-width: unset;
-        list-style-type: none;
-      }
-    }
-  }
-}
-
-.js-media-library-widget .js-media-library-selection .js-media-library-item {
-  width: auto;
-  padding: 0;
-}
-
-.view-display-id-media_page_list {
-  table.views-view-table {
-    max-width: 100%;
-
-    .views-field.views-field-thumbnail__target-id {
-      max-width: 225px;
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-  }
-}
-
-#media-library-view {
-  .view-media-library .view-content .views-form form{
-    .form-actions, [id^='edit-actions'] {
-      margin-top: 1.5em;
+    .js-media-library-item-preview {
+      position: relative;
+      padding-bottom: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #888;
     }
 
-    // Newer class is "media-library-grid-form__rows", "views__rows" is for
-    // backwards compatibility.
-    .media-library-grid-form__rows,
-    .views__rows {
+    .field--name-thumbnail {
+      overflow: hidden;
+    }
+
+    .media-librayr-item--name {
+      line-height: 1;
+      padding: 10px;
+    }
+
+    img {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
-      grid-gap: 10px;
-
-      .views-row {
-        margin: unset;
-        width: 100%;
-      }
-    }
-
-    label.media-library-select-all {
-      grid-column: 1/-1;
-      border: 1px solid #dedede;
-      background-color: #dedede;
-      padding: .25em;
-      margin-top: .25em;
-    }
-
-    .form--inline.clearfix {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-      grid-column-gap: 10px;
-      margin-bottom: .5em;
-    }
-
-    .form--inline.clearfix select {
-      max-width: 100%;
-      min-width: 190px;
-    }
-
-    .form--inline.clearfix input {
-      max-width: 100%;
-      min-width: 190px;
-    }
-
-
-    .media-library-item--grid {
-      margin-top: 0;
-      width: 100%;
-      border: 1px solid #ccc;
-      display: inline-flex;
-      flex-direction: column;
-
-      &.checked {
-        border-color: green;
-        border-width: 2px;
-      }
-
-      .field--name-field-media-image {
-        display: inline-flex;
-        width: 100%;
-        height: 200px;
-        justify-content: center;
-        align-items: center;
-        background-color: #dfdfdf;
-
-        img {
-          max-width: calc(100% - 10px);
-          height: auto;
-          border: 1px solid #222;
-        }
-      }
-
-      .views-field-media-library-select-form {
-        margin-top: auto;
-        text-align: center;
-
-        .form-type-checkbox {
-          margin: 0;
-          padding: 0;
-        }
-      }
-
-      .views-field.views-field-name {
-        padding: .5em;
-        word-break: break-all;
-        text-align: center;
-        line-height: 1;
-        font-weight: 400;
-      }
-
-
-
-      .views-live-preview & {
-        div.views-row+div.views-row {
-          margin-top: 0;
-        }
-      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      object-fit: cover;
     }
   }
-}
-
-  .media-library-add-form__source-field.field--widget-image-focal-point {
-    .image-preview {
-      display: block;
-    }
-
-    .focal-point-indicator {
-      width: 1px;
-      height: 1px;
-    }
-  }
-
 }

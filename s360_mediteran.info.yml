@@ -1,18 +1,22 @@
-name: S360 Mediteran Theme
+name: S360 Mediteran
 type: theme
-description: 'Square360 Mods to the Mediteran Theme'
+description: 'Square360 modifications to Mediteran'
 package: Other
 core_version_requirement: ^8 || ^9
 base theme: mediteran
 
 libraries:
-  - s360_mediteran/s360_mediteran.theme
+  - s360_mediteran/s360_mediteran.admin
 
 libraries-override:
   smart_date/smart_date:
     css:
       component:
         css/smart_date.css: false
+  mediteran/media-library:
+    css:
+      layout:
+        css/media-library/media-library.css: false
 
 regions:
   header: 'Header'

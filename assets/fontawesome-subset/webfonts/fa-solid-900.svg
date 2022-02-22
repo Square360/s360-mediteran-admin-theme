@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20201107 at Tue Feb 22 17:47:21 2022
+ By root
+Copyright (c) Font Awesome
+</metadata>
+<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><defs>
+<font id="FontAwesome5Pro-Solid" horiz-adv-x="512" >
+  <font-face 
+    font-family="Font Awesome 5 Pro Solid"
+    font-weight="900"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -32 512 416"
+    underline-thickness="25"
+    underline-position="-50"
+    unicode-range="U+0020-F03A"
+  />
+    <missing-glyph />
+    <glyph glyph-name="th-large" unicode="&#xf009;" 
+d="M296 416h192c13.2549 0 24 -10.7451 24 -24v-160c0 -13.2549 -10.7451 -24 -24 -24h-192c-13.2549 0 -24 10.7451 -24 24v160c0 13.2549 10.7451 24 24 24zM216 416c13.2549 0 24 -10.7451 24 -24v-160c0 -13.2549 -10.7451 -24 -24 -24h-192
+c-13.2549 0 -24 10.7451 -24 24v160c0 13.2549 10.7451 24 24 24h192zM0 152c0 13.2549 10.7451 24 24 24h192c13.2549 0 24 -10.7451 24 -24v-160c0 -13.2549 -10.7451 -24 -24 -24h-192c-13.2549 0 -24 10.7451 -24 24v160zM296 -32c-13.2549 0 -24 10.7451 -24 24v160
+c0 13.2549 10.7451 24 24 24h192c13.2549 0 24 -10.7451 24 -24v-160c0 -13.2549 -10.7451 -24 -24 -24h-192z" />
+    <glyph glyph-name="list" unicode="&#xf03a;" 
+d="M80 80c8.83105 0 16 -7.16895 16 -16v-64c0 -8.83105 -7.16895 -16 -16 -16h-64c-8.83105 0 -16 7.16895 -16 16v64c0 8.83105 7.16895 16 16 16h64zM80 400c8.83105 0 16 -7.16895 16 -16v-64c0 -8.83105 -7.16895 -16 -16 -16h-64c-8.83105 0 -16 7.16895 -16 16v64
+c0 8.83105 7.16895 16 16 16h64zM80 240c8.83105 0 16 -7.16895 16 -16v-64c0 -8.83105 -7.16895 -16 -16 -16h-64c-8.83105 0 -16 7.16895 -16 16v64c0 8.83105 7.16895 16 16 16h64zM496 64c8.83105 0 16 -7.16895 16 -16v-32c0 -8.83105 -7.16895 -16 -16 -16h-320
+c-8.83105 0 -16 7.16895 -16 16v32c0 8.83105 7.16895 16 16 16h320zM496 384c8.83105 0 16 -7.16895 16 -16v-32c0 -8.83105 -7.16895 -16 -16 -16h-320c-8.83105 0 -16 7.16895 -16 16v32c0 8.83105 7.16895 16 16 16h320zM496 224c8.83105 0 16 -7.16895 16 -16v-32
+c0 -8.83105 -7.16895 -16 -16 -16h-320c-8.83105 0 -16 7.16895 -16 16v32c0 8.83105 7.16895 16 16 16h320z" />
+  </font>
+</defs></svg>

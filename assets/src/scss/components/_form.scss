@@ -4,23 +4,8 @@ form {
   &[id^="taxonomy-term"] {
     .form-checkboxes,
     .form-radios {
-      &:not(.views-ui-dialog) {
-        display: fle;
-        flex-wrap: wrap;
-
-        .form-type-radio,
-        .form-type-checkbox {
-          padding: 0;
-        }
-
-        .form-item {
-          margin-bottom: 0;
-        }
-
-        .field--widget-options-pretty & {
-          display: block;
-        }
-      }
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }

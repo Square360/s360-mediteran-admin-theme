@@ -5,6 +5,11 @@ package: Other
 core_version_requirement: ^9 || ^10
 base theme: mediteran
 
+dependencies:
+  - admin_toolbar:admin_toolbar
+  - admin_toolbar:admin_toolbar_tools
+  - admin_toolbar_mediteran:admin_toolbar_mediteran
+
 libraries:
   - s360_mediteran/s360_mediteran.admin
 

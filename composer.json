@@ -22,7 +22,7 @@
     "require": {
         "drupal/admin_toolbar": "^3.4",
         "drupal/admin_toolbar_mediteran": "^1.17",
-        "drupal/mediteran": "^1.30",
+        "drupal/mediteran": "^1.30"
     },
     "require-dev": {
         "drupal/coder": "^8.3",

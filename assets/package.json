@@ -19,9 +19,9 @@
     "last 2 version"
   ],
   "scripts": {
-    "start": "yarn build --watch",
+    "start": "sass ./src/scss/s360-mediteran.admin.scss ./dist/css/s360-mediteran.admin.min.css --trace --no-source-map --watch",
     "build": "sass ./src/scss/s360-mediteran.admin.scss ./dist/css/s360-mediteran.admin.min.css --trace --no-source-map",
-    "build:prod": "yarn build; yarn uglifycss",
+    "build:prod": "npm run build; npm run uglifycss",
     "uglifycss": "uglifycss ./dist/css/s360-mediteran.admin.min.css --output ./dist/css/s360-mediteran.admin.min.css"
   },
   "devDependencies": {

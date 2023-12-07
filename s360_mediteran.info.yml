@@ -18,10 +18,6 @@ libraries-override:
     css:
       component:
         css/smart_date.css: false
-  mediteran/media-library:
-    css:
-      layout:
-        css/media-library/media-library.css: false
 
 regions:
   header: 'Header'

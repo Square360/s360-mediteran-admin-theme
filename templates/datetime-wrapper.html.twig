@@ -17,14 +17,14 @@
   set wrapper_attributes = create_attribute({
     'class': [
       'datetime-container',
-      'datetime-container--' ~ title|clean_class,
+      'datetime-container--' ~ title|render|clean_class,
     ]
   })
 %}
 {%
   set title_classes = [
     'label',
-    'label--' ~ title|clean_class,
+    'label--' ~ title|render|clean_class,
     required ? 'js-form-required',
     required ? 'form-required',
   ]
